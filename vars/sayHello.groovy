@@ -18,8 +18,10 @@ def setupStage() {
   
   node("master"){
     echo "From MASETER NODE PRINT BLOCK"
-    
   }
+  
+  echo "OUT OF NODE(MASTER) BLOCK"
+  
   server = "FAKE_SERVER_NAME"
   deployTomcatCode(server)
   
