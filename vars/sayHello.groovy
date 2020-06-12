@@ -14,7 +14,7 @@ def call(String name = 'human') {
 def setupStage() {
   checkpoint("Rerun STAGE_NAME Deployment")
   
-  input message: "Deploy to next STAGE?", admin: admin
+  input message: "Deploy to next STAGE?", submitter: admin
   
   node("master"){
     echo "From MASETER NODE PRINT BLOCK"
