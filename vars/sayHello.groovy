@@ -29,7 +29,7 @@ def setupStage() {
 
 def deployTomcatCode(Object server) {
     echo "IN deployTomcatCode method"
-    return {
+    //return {
       echo "After deployTomcatCode 'return'"
         node(server) {
           echo "IN the node(server) block"
@@ -65,6 +65,6 @@ def deployTomcatCode(Object server) {
                 } catch (Exception e) {
                 }
             }
-        }
+        //}
     }
 }
