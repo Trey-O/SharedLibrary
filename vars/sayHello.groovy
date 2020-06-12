@@ -17,10 +17,10 @@ def setupStage() {
   input message: "Deploy to next STAGE?", submitter: "admin"
   
   node("master"){
-    echo "From MASETER NODE PRINT BLOCK"
+    echo "Master Node request block" 
   }
   
-  echo "OUT OF NODE(MASTER) BLOCK"
+  echo "Line just prior to deployTomcatCode method"
   
   server = "FAKE_SERVER_NAME"
   deployTomcatCode(server)
@@ -28,9 +28,8 @@ def setupStage() {
 }
 
 def deployTomcatCode(Object server) {
-    echo "IN deployTomcatCode method"
+    echo "First Line in deployTomcatNode method before requesting fake node name"
     //return {
-      echo "After deployTomcatCode 'return'"
         node(server) {
           echo "IN the node(server) block"
             try {
