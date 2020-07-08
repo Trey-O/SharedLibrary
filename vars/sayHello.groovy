@@ -29,7 +29,7 @@ def setupStage() {
 
 def deployTomcatCode(Object server) {
     echo "First Line in deployTomcatNode method before requesting fake node name"
-    //return {
+    return {
         node(server) {
           echo "IN the node(server) block"
             try {
@@ -64,6 +64,6 @@ def deployTomcatCode(Object server) {
                 } catch (Exception e) {
                 }
             }
-        //}
+        }
     }
 }
