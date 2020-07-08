@@ -29,6 +29,7 @@ def setupStage() {
 
 def deployTomcatCode(Object server) {
     echo "First Line in deployTomcatNode method before requesting fake node name"
+  /*
     return {
         node(server) {
           echo "IN the node(server) block"
@@ -63,7 +64,7 @@ def deployTomcatCode(Object server) {
                     //fileSystemActions("remove", "/app/tomcatprofile/" + env.tomcatprofiledirectory + "/deploy")
                 } catch (Exception e) {
                 }
-            }
+            }*/
         }
     }
 }
