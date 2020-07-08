@@ -64,7 +64,7 @@ def deployTomcatCode(Object server) {
                     //fileSystemActions("remove", "/app/tomcatprofile/" + env.tomcatprofiledirectory + "/deploy")
                 } catch (Exception e) {
                 }
-            }*/
+            }
         }
-    }
+    }*/
 }
