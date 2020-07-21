@@ -12,6 +12,10 @@ def sayHello(String name = 'human') {
   echo "sayhello.groovy has been called from SharedLibrary repo"
 }
 
+def printSomething() {
+  echo "sayhello.groovy called" 
+}
+
 def setupStage() {
   checkpoint("Rerun STAGE_NAME Deployment")
   
