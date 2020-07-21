@@ -1,14 +1,15 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-  checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
-            doGenerateSubmoduleConfigurations: false, extensions: [], 
-            gitTool: 'Default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Trey-O/pipeline-deployment-demo']]])
-  checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
-            doGenerateSubmoduleConfigurations: false, extensions: [], 
-            gitTool: 'Default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Trey-O/mvntest-core']]])
-
-  setupStage()
+def sayHello(String name = 'human') {
+  #checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+  #          doGenerateSubmoduleConfigurations: false, extensions: [], 
+  #          gitTool: 'Default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Trey-O/pipeline-deployment-demo']]])
+  #checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+  #          doGenerateSubmoduleConfigurations: false, extensions: [], 
+  #          gitTool: 'Default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Trey-O/mvntest-core']]])
+#
+ # setupStage()
+  echo "sayhello.groovy has been called from SharedLibrary repo"
 }
 
 def setupStage() {
