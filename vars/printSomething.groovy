@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def printSomething() {
+///def printSomething() {
 
-  echo "printSomething.groovy from my-shared-library"
-}
+///  echo "printSomething.groovy from my-shared-library"
+//}
